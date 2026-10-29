@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>مثال: الويدجت على موقعك</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:"Segoe UI","Noto Kufi Arabic",Tahoma,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";color:#0f172a;
+    background:#fff;line-height:1.9;
+  }
+  .nav{
+    display:flex;align-items:center;gap:26px;padding:18px 28px;border-bottom:1px solid #eef1f7;
+    position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);z-index:10;
+  }
+  .logo{font-weight:900;font-size:19px;display:flex;align-items:center;gap:9px}
+  .logo i{
+    width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#6366f1,#06b6d4);display:inline-block;
+  }
+  .nav a{color:#475569;text-decoration:none;font-size:14px}
+  .nav .cta{
+    margin-inline-start:auto;background:#0f172a;color:#fff;padding:9px 18px;border-radius:10px;font-size:13.5px;
+  }
+  .hero{
+    padding:90px 28px 70px;text-align:center;
+    background:radial-gradient(900px 420px at 50% -10%,#eef0ff,rgba(255,255,255,0) 70%);
+  }
+  .pill{
+    display:inline-block;border:1px solid #dfe3f5;background:#fff;color:#4f46e5;
+    padding:6px 14px;border-radius:999px;font-size:12.5px;margin-bottom:22px;
+  }
+  h1{font-size:clamp(26px,4vw,44px);margin:0 auto 16px;max-width:760px;letter-spacing:-.5px;line-height:1.4}
+  .hero p{color:#64748b;max-width:620px;margin:0 auto 30px;font-size:16px}
+  .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:13px 26px;border-radius:12px;font-size:15px;text-decoration:none;font-weight:700}
+  .btn.primary{background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;box-shadow:0 14px 30px -14px rgba(99,102,241,.9)}
+  .btn.ghost{border:1px solid #e2e8f0;color:#0f172a;background:#fff}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:20px 28px 90px;max-width:1000px;margin:0 auto}
+  .card{border:1px solid #eef1f7;border-radius:16px;padding:22px;background:#fff;box-shadow:0 10px 30px -26px #0f172a}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .card p{margin:0;color:#64748b;font-size:14px}
+  .card .ic{font-size:22px;margin-bottom:10px;display:block}
+  .note{
+    max-width:760px;margin:0 auto 80px;padding:16px 20px;border-radius:14px;
+    background:#f8fafc;border:1px dashed #cbd5e1;color:#475569;font-size:13.5px;text-align:center;
+  }
+  code{background:#eef1f8;padding:2px 7px;border-radius:6px;direction:ltr;display:inline-block;font-size:12.5px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo"><i></i> نُقطة</div>
+  <a href="#">الرئيسية</a>
+  <a href="#">الخدمات</a>
+  <a href="#">الأسعار</a>
+  <a class="cta" href="#">ابدأ الآن</a>
+</nav>
+
+<header class="hero">
+  <span class="pill">✨ صفحة تجريبية — الويدجت شغّال تحت على الشمال</span>
+  <h1>دي صفحة موقعك، والمساعد الذكي جاهز يرد على أي زائر جواها</h1>
+  <p>
+    دوس على الزرار الدائري اللي تحت وشوف المحادثة بتفتح في بانل جوه الصفحة نفسها.
+    ده نفس الكود اللي هتحطه في أي موقع عندك بسطر واحد.
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="#">جرّب الخدمة</a>
+    <a class="btn ghost" href="#">اعرف أكتر</a>
+  </div>
+</header>
+
+<section class="cards">
+  <div class="card"><span class="ic">💬</span><h3>ردود فورية</h3><p>الزائر بيكتب والمساعد بيرد في ثواني — من غير ما تسيب الصفحة.</p></div>
+  <div class="card"><span class="ic">🎨</span><h3>شكل متناسق</h3><p>الويدجت بياخد لونك واتجاه الصفحة، وشغّال على الموبايل.</p></div>
+  <div class="card"><span class="ic">🔒</span><h3>المفتاح محمي</h3><p>مفتاح الـ API بيقعد على السيرفر بس — عمره ما بيوصل للمتصفح.</p></div>
+</section>
+
+<p class="note">
+  التركيب: <code>&lt;script src="/widget.js" data-src="" data-title="مساعد الموقع"&gt;&lt;/script&gt;</code>
+  قبل قفل <code>&lt;/body&gt;</code> — تفاصيل أكتر في ملف README.
+</p>
+
+<!-- ▼▼▼ سطر الويدجت ▼▼▼ -->
+<script src="/widget.js" data-src="" data-title="مساعد الموقع" data-position="left" data-color="#6366f1"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "ai-chat-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "موقع شات ذكي بواجهة عربية — سيرفر Node.js بدون مكتبات خارجية",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
